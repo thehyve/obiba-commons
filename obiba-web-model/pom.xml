@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.obiba.commons</groupId>
     <artifactId>obiba-commons</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.7-sesi</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>obiba-web-model</artifactId>
@@ -72,6 +72,10 @@
                 <condition property="os.protoc" value="${protobuf.version}-win32">
                   <os family="windows" />
                 </condition>
+
+                  <condition property="os.protoc" value="${protobuf.version}-osx_64">
+                      <os name="Mac OS X" arch="x86_64" />
+                  </condition>
 
                 <fail message="No protoc binary for your OS: ${os.name} ${os.arch}." unless="os.protoc" />
 

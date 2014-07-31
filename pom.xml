@@ -8,7 +8,7 @@
   <groupId>org.obiba.commons</groupId>
   <artifactId>obiba-commons</artifactId>
   <packaging>pom</packaging>
-  <version>1.7-SNAPSHOT</version>
+  <version>1.7-sesi</version>
 
   <licenses>
     <license>
@@ -669,6 +669,28 @@
 
   <repositories>
 
+      <repository>
+          <id>thehyve.releases</id>
+          <name>The Hyve Releases</name>
+          <url>https://repo.thehyve.nl/content/repositories/releases</url>
+          <releases>
+              <enabled>true</enabled>
+          </releases>
+          <snapshots>
+              <enabled>false</enabled>
+          </snapshots>
+      </repository>
+      <repository>
+          <id>thehyve.snapshots</id>
+          <name>The Hyve Snapshots</name>
+          <url>https://repo.thehyve.nl/content/repositories/snapshots</url>
+          <releases>
+              <enabled>false</enabled>
+          </releases>
+          <snapshots>
+              <enabled>true</enabled>
+          </snapshots>
+      </repository>
     <repository>
       <id>obiba.org</id>
       <name>Obiba Maven 2.x Repository</name>
@@ -685,7 +707,16 @@
 
   <distributionManagement>
 
-    <repository>
+      <repository>
+          <id>repo.thehyve.nl-releases</id>
+          <url>http://repo.thehyve.nl/content/repositories/releases</url>
+      </repository>
+      <snapshotRepository>
+          <id>repo.thehyve.nl-snapshots</id>
+          <url>http://repo.thehyve.nl/content/repositories/snapshots</url>
+      </snapshotRepository>
+<!--
+      <repository>
       <id>obiba-releases</id>
       <url>http://repo.obiba.org/libs-release-local</url>
     </repository>
@@ -694,25 +725,33 @@
       <id>obiba-snapshots</id>
       <url>http://repo.obiba.org/libs-snapshot-local</url>
     </snapshotRepository>
-
+-->
   </distributionManagement>
 
-  <scm>
+    <scm>
+        <connection>scm:git:git://github.com/thehyve/obiba-commons.git</connection>
+        <developerConnection>scm:git:https://github.com/thehyve/obiba-commons.git</developerConnection>
+        <url>https://github.com/thehyve/obiba-commons</url>
+    </scm>
+<!--
+    <scm>
     <connection>scm:git:git://github.com/obiba/obiba-commons.git</connection>
     <developerConnection>scm:git:https://github.com/obiba/obiba-commons.git</developerConnection>
     <url>https://github.com/obiba/obiba-commons</url>
     <tag>1.4.0</tag>
   </scm>
-
+-->
   <issueManagement>
     <system>JIRA</system>
     <url>http://jira.obiba.org</url>
   </issueManagement>
 
+<!--
   <ciManagement>
     <system>Jenkins</system>
     <url>http://ci.obiba.org/view/OBiBa%20Commons/job/Obiba%20Commons</url>
   </ciManagement>
+-->
 
   <mailingLists>
     <mailingList>
