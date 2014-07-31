@@ -766,6 +766,7 @@
       <id>release</id>
       <build>
         <plugins>
+            <!--
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-javadoc-plugin</artifactId>
@@ -791,6 +792,7 @@
               </execution>
             </executions>
           </plugin>
+          -->
           <plugin>
             <!-- Deploy javadoc and sources: explicitly define maven-deploy-plugin after other to force exec order -->
             <artifactId>maven-deploy-plugin</artifactId>
