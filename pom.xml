@@ -672,7 +672,7 @@
       <repository>
           <id>thehyve.releases</id>
           <name>The Hyve Releases</name>
-          <url>https://repo.thehyve.nl/content/repositories/releases</url>
+          <url>http://repo.thehyve.nl/content/repositories/releases</url>
           <releases>
               <enabled>true</enabled>
           </releases>
@@ -683,7 +683,7 @@
       <repository>
           <id>thehyve.snapshots</id>
           <name>The Hyve Snapshots</name>
-          <url>https://repo.thehyve.nl/content/repositories/snapshots</url>
+          <url>http://repo.thehyve.nl/content/repositories/snapshots</url>
           <releases>
               <enabled>false</enabled>
           </releases>
