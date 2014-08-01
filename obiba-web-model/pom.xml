@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.obiba.commons</groupId>
     <artifactId>obiba-commons</artifactId>
-    <version>1.7-sesi</version>
+    <version>1.7-sesi1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>obiba-web-model</artifactId>
@@ -79,7 +79,10 @@
 
                 <fail message="No protoc binary for your OS: ${os.name} ${os.arch}." unless="os.protoc" />
 
-                <path id="protofiles">
+                  <!-- this must be deleted before, as any failure will prevent the deletion to be run in the end -->
+                  <delete file="${basedir}/src/main/resources/wrapper.proto" quiet="true" failonerror="false"/>
+
+                  <path id="protofiles">
                   <fileset dir="src/main/resources">
                     <include name="*.proto" />
                   </fileset>
@@ -115,7 +118,7 @@
                 <replace file="${basedir}/src/main/resources/wrapper.proto" token="__AUTH_PROTO_FILE__" value="AuthDtos" />
                 <mkdir dir="target/generated-sources/protobuf-php" />
                 <!--suppress MavenModelInspection -->
-                <exec dir="${basedir}" executable="${basedir}/tools/protobuf/protoc-${os.protoc}" failonerror="true">
+                <exec dir="${basedir}" executable="${basedir}/tools/protobuf/protoc-${os.protoc}" failonerror="false">
                   <arg value="--php_out=target/generated-sources/protobuf-php" />
                   <arg line="--plugin=${basedir}/tools/protobuf/php/protoc-gen-php" />
                   <arg line="-I${basedir}/tools/protobuf/php/library/DrSlump/Protobuf/Compiler/protos" />
