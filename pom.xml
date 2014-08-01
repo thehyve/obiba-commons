@@ -8,7 +8,7 @@
   <groupId>org.obiba.commons</groupId>
   <artifactId>obiba-commons</artifactId>
   <packaging>pom</packaging>
-  <version>1.7-sesi1</version>
+  <version>1.7-sesi</version>
 
   <licenses>
     <license>
@@ -670,9 +670,9 @@
   <repositories>
 
       <repository>
-          <id>thehyve.releases</id>
+          <id>repo.thehyve.nl-releases</id>
           <name>The Hyve Releases</name>
-          <url>http://repo.thehyve.nl/content/repositories/releases</url>
+          <url>https://repo.thehyve.nl/content/repositories/releases</url>
           <releases>
               <enabled>true</enabled>
           </releases>
@@ -683,7 +683,7 @@
       <repository>
           <id>thehyve.snapshots</id>
           <name>The Hyve Snapshots</name>
-          <url>http://repo.thehyve.nl/content/repositories/snapshots</url>
+          <url>repo.thehyve.nl-snapshots</url>
           <releases>
               <enabled>false</enabled>
           </releases>
@@ -709,7 +709,7 @@
 
       <repository>
           <id>repo.thehyve.nl-releases</id>
-          <url>http://repo.thehyve.nl/content/repositories/releases</url>
+          <url>https://repo.thehyve.nl/content/repositories/releases</url>
       </repository>
       <snapshotRepository>
           <id>repo.thehyve.nl-snapshots</id>
@@ -857,9 +857,9 @@
     <xstream.version>1.4.7</xstream.version>
 
     <!-- maven plugins -->
-    <maven-buildnumber-plugin.version>1.3</maven-buildnumber-plugin.version>
+    <maven-buildnumber-plugin.version>1.2</maven-buildnumber-plugin.version>
     <maven-compiler-plugin.version>2.5.1</maven-compiler-plugin.version>
-    <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
+    <maven-deploy-plugin.version>2.8.1</maven-deploy-plugin.version>
     <maven-findbugs-plugin.version>2.5.2</maven-findbugs-plugin.version>
     <maven-javadoc-plugin.version>2.9</maven-javadoc-plugin.version>
     <maven-pmd-plugin.version>3.1</maven-pmd-plugin.version>
