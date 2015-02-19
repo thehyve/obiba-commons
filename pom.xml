@@ -667,66 +667,66 @@
     </testResources>
   </build>
 
-  <repositories>
+    <repositories>
 
-      <repository>
-          <id>repo.thehyve.nl-releases</id>
-          <name>The Hyve Releases</name>
-          <url>https://repo.thehyve.nl/content/repositories/releases</url>
-          <releases>
-              <enabled>true</enabled>
-          </releases>
-          <snapshots>
-              <enabled>false</enabled>
-          </snapshots>
-      </repository>
-      <repository>
-          <id>thehyve.snapshots</id>
-          <name>The Hyve Snapshots</name>
-          <url>repo.thehyve.nl-snapshots</url>
-          <releases>
-              <enabled>false</enabled>
-          </releases>
-          <snapshots>
-              <enabled>true</enabled>
-          </snapshots>
-      </repository>
-    <repository>
-      <id>obiba.org</id>
-      <name>Obiba Maven 2.x Repository</name>
-      <url>http://repo.obiba.org/repo</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
+        <repository>
+            <id>thehyve.releases</id>
+            <name>The Hyve Releases</name>
+            <url>https://repo.thehyve.nl/content/repositories/releases</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>thehyve.snapshots</id>
+            <name>The Hyve Snapshots</name>
+            <url>https://repo.thehyve.nl/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>obiba.org</id>
+            <name>Obiba Maven 2.x Repository</name>
+            <url>http://repo.obiba.org/repo</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
 
-  </repositories>
+    </repositories>
 
-  <distributionManagement>
+    <distributionManagement>
 
-      <repository>
-          <id>repo.thehyve.nl-releases</id>
-          <url>https://repo.thehyve.nl/content/repositories/releases</url>
-      </repository>
-      <snapshotRepository>
-          <id>repo.thehyve.nl-snapshots</id>
-          <url>http://repo.thehyve.nl/content/repositories/snapshots</url>
-      </snapshotRepository>
-<!--
-      <repository>
-      <id>obiba-releases</id>
-      <url>http://repo.obiba.org/libs-release-local</url>
-    </repository>
+        <repository>
+            <id>repo.thehyve.nl-releases</id>
+            <url>https://repo.thehyve.nl/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>repo.thehyve.nl-snapshots</id>
+            <url>http://repo.thehyve.nl/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <!--
+              <repository>
+              <id>obiba-releases</id>
+              <url>http://repo.obiba.org/libs-release-local</url>
+            </repository>
 
-    <snapshotRepository>
-      <id>obiba-snapshots</id>
-      <url>http://repo.obiba.org/libs-snapshot-local</url>
-    </snapshotRepository>
--->
-  </distributionManagement>
+            <snapshotRepository>
+              <id>obiba-snapshots</id>
+              <url>http://repo.obiba.org/libs-snapshot-local</url>
+            </snapshotRepository>
+        -->
+    </distributionManagement>
 
     <scm>
         <connection>scm:git:git://github.com/thehyve/obiba-commons.git</connection>
