@@ -118,7 +118,7 @@
                 <replace file="${basedir}/src/main/resources/wrapper.proto" token="__AUTH_PROTO_FILE__" value="AuthDtos" />
                 <mkdir dir="target/generated-sources/protobuf-php" />
                 <!--suppress MavenModelInspection -->
-                <exec dir="${basedir}" executable="${basedir}/tools/protobuf/protoc-${os.protoc}" failonerror="true">
+                <exec dir="${basedir}" executable="${basedir}/tools/protobuf/protoc-${os.protoc}" failonerror="false">
                   <arg value="--php_out=target/generated-sources/protobuf-php" />
                   <arg line="--plugin=${basedir}/tools/protobuf/php/protoc-gen-php" />
                   <arg line="-I${basedir}/tools/protobuf/php/library/DrSlump/Protobuf/Compiler/protos" />
