@@ -8,7 +8,7 @@
   <groupId>org.obiba.commons</groupId>
   <artifactId>obiba-commons</artifactId>
   <packaging>pom</packaging>
-  <version>1.7.1-sesi-SNAPSHOT</version>
+  <version>1.7.1-sesi</version>
 
   <licenses>
     <license>
@@ -732,7 +732,8 @@
         <connection>scm:git:git://github.com/thehyve/obiba-commons.git</connection>
         <developerConnection>scm:git:https://github.com/thehyve/obiba-commons.git</developerConnection>
         <url>https://github.com/thehyve/obiba-commons</url>
-    </scm>
+      <tag>obiba-commons-1.7.1-sesi</tag>
+  </scm>
 <!--
     <scm>
     <connection>scm:git:git://github.com/obiba/obiba-commons.git</connection>

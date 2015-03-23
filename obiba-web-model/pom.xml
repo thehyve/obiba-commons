@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.obiba.commons</groupId>
     <artifactId>obiba-commons</artifactId>
-    <version>1.7.1-sesi-SNAPSHOT</version>
+    <version>1.7.1-sesi</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>obiba-web-model</artifactId>
@@ -80,7 +80,7 @@
                 <fail message="No protoc binary for your OS: ${os.name} ${os.arch}." unless="os.protoc" />
 
                   <!-- this must be deleted before, as any failure will prevent the deletion to be run in the end -->
-                  <delete file="${basedir}/src/main/resources/wrapper.proto" quiet="true" failonerror="false"/>
+                  <delete file="${basedir}/src/main/resources/wrapper.proto" quiet="true" failonerror="false" />
 
                   <path id="protofiles">
                   <fileset dir="src/main/resources">
